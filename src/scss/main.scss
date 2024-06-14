@@ -1,0 +1,19 @@
+$containerWidth: 1140px;
+$baseFontSize: 16px;
+
+//colors
+
+$red: #FF0000;
+$white: #fff;
+$blue: #0500FF;
+$green: #52FF00;
+
+//breakpoints
+
+$containerWidth: 1098px;
+$tablets: 768px;
+$phones: 480px;
+
+@import 'media.scss';
+@import "../scss/keyframes/*.scss";
+@import "../scss/blocks/*.scss";
