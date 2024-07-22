@@ -267,7 +267,8 @@ footer {
 .page-wrapper {
   display: grid;
   grid-template-columns: 300px auto;
-  grid-template-areas: "h m" "h b";
+  grid-template-areas: "h m"
+ "h b";
 }
 
 .container {
@@ -802,7 +803,7 @@ header {
   top: 11px;
   width: 12px;
   height: 8px;
-  background-image: url("../../img/navigation-arrow.svg");
+  background-image: url("../img/navigation-arrow.svg");
   -webkit-transform: rotateZ(270deg);
       -ms-transform: rotate(270deg);
           transform: rotateZ(270deg);
@@ -921,7 +922,7 @@ header {
 }
 
 .banner .container {
-  background-image: url("../../img/banner-background.png");
+  background-image: url("../img/banner-background.png");
   background-repeat: no-repeat;
   background-position: top 15px center;
   height: 100%;
