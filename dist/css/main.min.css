@@ -922,7 +922,7 @@ header {
 }
 
 .banner .container {
-  background-image: url("../../img/banner-background.png");
+  background-image: url("../img/banner-background.png");
   background-repeat: no-repeat;
   background-position: top 15px center;
   height: 100%;
