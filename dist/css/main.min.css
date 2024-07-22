@@ -267,7 +267,8 @@ footer {
 .page-wrapper {
   display: grid;
   grid-template-columns: 300px auto;
-  grid-template-areas: "h m" "h b";
+  grid-template-areas: "h m"
+ "h b";
 }
 
 .container {
@@ -731,7 +732,7 @@ header {
   padding: 0 15px;
 }
 
-.header-wrapper .navigation__search button {
+.header-wrapper .ion__search button {
   cursor: pointer;
   position: absolute;
   background: none;
@@ -742,14 +743,14 @@ header {
           transform: translateY(-50%);
 }
 
-.header-wrapper .navigation__search input {
+.header-wrapper .ion__search input {
   width: 100%;
   border: 1px solid #CBCCDC;
   border-radius: 17px;
   padding: 7px 10px 7px 39px;
 }
 
-.header-wrapper .navigation__list {
+.header-wrapper .ion__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -761,7 +762,7 @@ header {
   width: 100%;
 }
 
-.header-wrapper .navigation__list span {
+.header-wrapper .ion__list span {
   display: block;
   position: relative;
   cursor: pointer;
@@ -802,7 +803,7 @@ header {
   top: 11px;
   width: 12px;
   height: 8px;
-  background-image: url("../../img/navigation-arrow.svg");
+  background-image: url("../img/navigation-arrow.svg");
   -webkit-transform: rotateZ(270deg);
       -ms-transform: rotate(270deg);
           transform: rotateZ(270deg);
