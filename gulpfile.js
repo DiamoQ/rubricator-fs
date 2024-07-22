@@ -13,7 +13,7 @@ const px2rem        = require('gulp-smile-px2rem');
 const gcmq          = require('gulp-group-css-media-queries');
 
 task('clean', () => {
-  return src('dist/**/*', { read: false })
+  return src('dist/**/*', '!dist/fonts', { read: false })
     .pipe(clean());
 });
 

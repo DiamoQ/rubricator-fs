@@ -10,6 +10,12 @@
   }
 }
 
+@mixin laptops{
+  @media screen and (max-width: $laptopsWidth){
+    @content;
+  }
+}
+
 @mixin containerWidth{
   @media screen and (max-width: $containerWidth){
     @content;

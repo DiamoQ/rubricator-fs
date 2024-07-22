@@ -1,0 +1,311 @@
+header {
+  position: relative;
+  background: $white;
+  width: 100%;
+
+  @include laptops{
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0; 
+    max-width: 55px;
+
+    &.notactive {
+      animation-name: header-width-down;
+      animation-duration: .6s;
+      max-width: 55px;
+    }
+
+    &.active {
+      z-index: 1000;
+      animation-name: header-width-up;
+      animation-duration: .6s;
+      max-width: 300px;
+    }
+  }
+
+  @include phones{
+    height: 50px;
+    z-index: 1000;
+
+    &.notactive {
+      animation-name: header-width-down-mobile;
+      animation-duration: 1.2s;
+      z-index: 1000;
+      max-width: 55px;
+      height: 50px;
+    }
+
+    &.active {
+      animation-name: header-width-up-mobile;
+      animation-duration: 1.2s;
+      max-width: 100%;
+      z-index: 1111;
+      height: 100%;
+    }
+  }
+}
+
+.header-hamburger__wrapper {
+  position: absolute;
+  left: -9999px;
+
+  @include laptops{
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 56px;
+    height: 50px;
+    background-color: $hamburger-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hamburger {
+      width: 20px;
+      height: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 3px;
+
+      &-line {
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 2px;
+      }
+
+      &-bottom {
+        width: 13px;
+      }
+    }
+  }
+}
+
+.header-wrapper {
+  position: fixed;
+  overflow-y: auto;
+  height: 100%;
+  max-width: 300px;
+  padding: 25px 15px;
+  
+
+  @include laptops{
+    position: absolute;
+    animation-name: header-hide;
+    animation-duration: .6s;
+    left: -999px;
+    opacity: 0;
+
+    &.active {
+      background: $white;
+      width: 300px;
+      z-index: 500;
+      animation-name: header-show;
+      animation-duration: .8s;
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  @include phones{
+    animation-name: header-hide-mobile;
+    animation-duration: 1.2s;
+    left: -400px;
+    max-width: 100%;
+
+    &.active {
+      width: 100%;
+      animation-name: header-show-mobile;
+      animation-duration: 1.2s;
+    }
+
+    .close {
+      cursor: pointer;
+      display: block;
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+
+      &-line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $grey;
+        border-radius: 2px;
+        transform: rotateZ(135deg);
+        top: 50%;
+        position: absolute;
+      }
+
+      &-left {
+        transform: rotateZ(45deg);
+      }
+    }
+  }
+
+  .close {
+    display: none;
+  }
+
+  .site-name {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    padding: 0 15px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .navigation__search {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0 15px;
+
+    button {
+      cursor: pointer;
+      position: absolute;
+      background: none;
+      left: 22px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    input {
+      width: 100%;
+      border: 1px solid #CBCCDC;
+      border-radius: 17px;
+      padding: 7px 10px 7px 39px;
+    }
+  }
+  
+  .navigation__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+
+    span {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      line-height: 22px;
+      text-transform: uppercase;
+      padding : 4px 0 4px 31px;
+      transition: background-color .3s ease, color .3s ease;
+
+      &:hover {
+        color: $blue;
+        border-radius: 4px;
+        background-color: $blue-hover;
+        transition: background-color .3s ease, color .3s ease;
+      }
+
+      &.active {
+        color: $blue;
+
+        &:before {
+          transform: rotateZ(360deg);
+          transition: transform .3s ease;
+        }
+      }
+
+      &:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        left: 16px;
+        top: 11px;
+        width: 12px;
+        height: 8px;
+        background-image: url("../../img/navigation-arrow.svg");
+        transform: rotateZ(270deg);
+        fill: $dark;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: transform .3s ease;
+      }
+    }
+
+    .navigation__links-list {
+      display: none;
+      flex-direction: column;
+      position: relative;
+      gap: 10px;
+      padding-top: 11px;
+      padding-left: 41px;
+      
+      &.active {
+        display: flex;
+        animation-name: show;
+        animation-duration: .7s;
+      }
+
+      &:before {  
+        content: " ";
+        position: absolute;
+        left: 20px;
+        top: 0;
+        width: 12px;
+        height: calc(100% - 9px);
+        border-radius: 32px;
+        border: 1px solid $blue-hover;
+        border-right: 0;
+        border-top: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 10px;
+      }
+    }
+
+    li:nth-last-of-type(1) {
+      a {
+        &:before {
+          content: none;
+        }
+      }
+    }
+
+    li.active a {
+      color: $grey;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        left: -12px;
+        top: 50%;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        background-color: $blue-hover;
+      }
+    }
+
+    a {
+      cursor: pointer;
+      position: relative;
+      transition: color .3s ease;
+
+      &:hover {
+        color: $blue;
+        transition: color .3s ease;
+      }
+
+      &:before {
+        content: " ";
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        width: 9px;
+        height: 1px;
+        transform: translateY(-50%);
+        background-color: $blue-hover;
+      }
+    }
+  }
+}

@@ -1,18 +1,33 @@
-$containerWidth: 1140px;
-$baseFontSize: 16px;
+$baseFontSize: 14px;
 
 //colors
 
-$red: #FF0000;
+$dark: #2B2B2B;
+$grey: #909090;
+$orange: #FF430F;
 $white: #fff;
-$blue: #0500FF;
-$green: #52FF00;
+$blue: #2436BF;
+$blue-hover: #BEC3EC;
+$main-background: #F5F5F5;
+$annotation-background: #EAEAEB;
+$hamburger-background: #6083FF;
+$blue-background: #DAEFFB;
+$green-background: #D3F4E4;
+$yellow-background: #F4F3D6;
+$siren-background: #E7E9FB;
+$pink-background: #F9E0E4;
+$orange-background: #FFE8CC;
+
+//bradius
+
+$bradius: 20%;
 
 //breakpoints
 
-$containerWidth: 1098px;
-$tablets: 768px;
-$phones: 480px;
+$containerWidth: 1920px;
+$laptopsWidth: 1250px;
+$tablets: 991px;
+$phones: 580px;
 
 @import 'media.scss';
 @import "../scss/keyframes/*.scss";

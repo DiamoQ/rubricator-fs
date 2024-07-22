@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Настройка автоплатежей в биллинге</title>
+    <!-- <link rel="stylesheet" href="fonts/golos/golos.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <header class="navigation">
+        <div class="header-hamburger__wrapper">
+          <div class="hamburger">
+            <span class="hamburger-line hamburger-top"></span>
+            <span class="hamburger-line hamburger-middle"></span>
+            <span class="hamburger-line hamburger-bottom"></span>
+          </div>
+        </div>
+        <div class="header-wrapper">
+          <div class="close">
+            <span class="close-line close-left"></span>
+            <span class="close-line close-right"></span>
+          </div>
+          <a href="/" class="site-name">Рубрикатор помощи</a>
+          <form id="navigationSearch" class="search navigation__search">
+            <button type="submit" class="input__btn">
+              <img
+                draggable="false"
+                alt="Иконка кнопки поиска"
+                src="./img/navigation-search-icon.svg"
+              />
+            </button>
+            <input
+              type="text"
+              name="navigation-search"
+              id="navigation-search"
+              class="navigation__input"
+              placeholder="Поиск"
+            />
+          </form>
+          <nav class="navigation__block">
+            <ul class="navigation__list">
+              <li class="navigation___item">
+                <span class="navigation__section">начало работы</span>
+                <ul class="navigation__links-list">
+                  <li class="active">
+                    <a href="/content.html" class="navigation__link"
+                      >Настройка автоплатежей в биллинге</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Основные возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Заказ товаров и услуг</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation___item">
+                <span class="navigation__section">аналитика</span>
+                <ul class="navigation__links-list">
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Интерфейс системы</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Основные возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Заказ товаров и услуг</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation___item">
+                <span class="navigation__section">Основные настройки</span>
+                <ul class="navigation__links-list">
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Интерфейс системы</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Основные возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Заказ товаров и услуг</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation___item">
+                <span class="navigation__section">тарифы и платежи</span>
+                <ul class="navigation__links-list">
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Интерфейс системы</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Основные возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Заказ товаров и услуг</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation___item">
+                <span class="navigation__section">домены и хостинг</span>
+                <ul class="navigation__links-list">
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Интерфейс системы</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Основные возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Заказ товаров и услуг</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation___item">
+                <span class="navigation__section">документы и бухгалтерия</span>
+                <ul class="navigation__links-list">
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Интерфейс системы</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Основные возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Заказ товаров и услуг</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation___item">
+                <span class="navigation__section">техническая поддержка</span>
+                <ul class="navigation__links-list">
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Интерфейс системы</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Основные возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Заказ товаров и услуг</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="main">
+        <section class="section banner banner-content">
+          <div class="container">
+            <img
+              src="./img/fs-white-logo.svg"
+              class="banner__logo"
+              alt="Логотип компании 'Фабрика сайтов'"
+              draggable="false"
+            />
+            <p class="banner__text">Справочный центр «Фабрики сайтов»</p>
+            <h1 class="banner__title">Настройка автоплатежей в биллинге</h1>
+          </div>
+        </section>
+        <section class="section content">
+          <div class="container">
+            <div class="step">1</div>
+            <p>
+              Сначала настройте автопродление услуг в биллинге, чтобы они
+              продлевались автоматически при наличии средств на балансе. Для
+              этого в левом меню выберите нужную услугу (хостинг, домен и тд).
+              Затем кликните на строку с нужным доменом или хостингом, чтобы она
+              выделилась, как на скриншоте ниже и нажмите кнопку «Изменить».
+            </p>
+            <img
+              src="../img/photo-instruction-1.png"
+              class="photo-big-inctruction"
+              alt="Фотография-инструкция"
+            />
+            <div class="step">2</div>
+            <p>
+              Далее выберите период автопродления, ниже обязательно нажмите
+              «ОК».
+            </p>
+            <iframe
+              src="https://www.youtube.com/embed/DpTZvTMyPhI?si=XMA3a7tNwlBCt48l"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="step">3</div>
+            <p>
+              Вам будет предложено ограничить максимальную сумму списания с
+              карты. Списание будет происходить, когда до
+              <a href="#" class="text-link">окончания услуги</a> осталось менее
+              10 дней и необходимо пополнить баланс для её автоматического
+              продления. По умолчанию будет предложена максимальная стоимость
+              услуги с учетом выбранного периода продления и +10%. Вы можете
+              самостоятельно изменить эту сумму, но она должна быть не меньше
+              стоимости продления услуги. Нажмите «ПРОДОЛЖИТЬ».
+            </p>
+            <div class="annotation">
+              <p>
+                Вы можете самостоятельно изменить эту сумму, но она должна быть
+                не меньше стоимости продления услуги.
+              </p>
+            </div>
+            <img
+              src="../img/photo-instruction-2.png"
+              class="photo-big-inctruction"
+              alt="Фотография-инструкция"
+            />
+          </div>
+        </section>
+        <section class="section form-section">
+          <div class="container">
+            <div class="form-section__wrapper">
+              <h2 class="form-section__title">Не нашли ответа на вопрос?</h2>
+              <p>
+                Заполните форму ниже, и менеджеры нашей техподдержки смогут
+                помочь вам с решением
+              </p>
+              <form class="form" action="" method="post">
+                <div class="form__row">
+                  <div class="form__group">
+                    <input
+                      id="name"
+                      type="text"
+                      class="form__control"
+                      name="name"
+                      value=""
+                      placeholder="Ф.И.О"
+                      required
+                    />
+                  </div>
+                  <div class="form__group">
+                    <input
+                      id="email"
+                      type="email"
+                      class="form__control"
+                      name="email"
+                      value=""
+                      placeholder="E-mail"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form__group">
+                  <textarea
+                    id="text"
+                    name="text"
+                    class="form__control"
+                    placeholder="Сообщение"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form__group">
+                  <label class="form__file-label" for="file">Приложить файлы (JPG/PNG/PDF, не более 5 Мб)</label>
+                  <input
+                    id="file"
+                    type="file"
+                    class="form__file"
+                    name="file"
+                  />
+                </div>
+                <div class="form__buttons">
+                  <label class="agree">
+                    <input type='checkbox' checked>
+                    <span></span>
+                    Я даю согласие на обработку и хранение данных
+                  </label>
+                  <button type="submit" class="submit-btn">
+                    Подтвердить согласие ↗
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="section themes">
+          <div class="container">
+            <h2 class="section-title">Разделы справочного центра</h2>
+            <ul class="themes__list">
+              <li>
+                <a href="/content" class="themes__link">Начало работы</a>
+              </li>
+              <li>
+                <a href="/content" class="themes__link">Тарифы и платежи</a>
+              </li>
+              <li>
+                <a href="/content" class="themes__link"
+                  >Техническая поддержка</a
+                >
+              </li>
+              <li>
+                <a href="/content" class="themes__link">Аналитика</a>
+              </li>
+              <li>
+                <a href="/content" class="themes__link">Домены и хостинг</a>
+              </li>
+              <li>
+                <a href="/content" class="themes__link">Основные настройки</a>
+              </li>
+              <li>
+                <a href="/content" class="themes__link"
+                  >Документы и бухгалтерия</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__block">
+            <span class="footer__block-name">Сообщить о найденной ошибке</span>
+            <p class="footer__block-text">
+              Если вы обнаружили ошибку в текстах или какая-то функция работает
+              с ошибками, обязательно сообщите нам через
+              <a href="#">форму</a> Мы все исправим.
+            </p>
+          </div>
+          <div class="footer__block">
+            <span class="footer__block-name">Сообщить о найденной ошибке</span>
+            <p class="footer__block-text">
+              Если вы не нашли ответа на свой вопрос в нашем справочнике, то
+              можете адресовать его нашему консультанту, написав на
+              <a href="mailto:support@fabricasaitov.ru"
+                >support@fabricasaitov.ru</a
+              >
+            </p>
+          </div>
+          <div class="footer__block">
+            <span class="footer__block-name">Сообщить о найденной ошибке</span>
+            <p class="footer__block-text">
+              Получить закрывающие документы или подтверждение платежа —
+              напишите нам на
+              <a href="mailto:buh@fabricasaitov.ru">buh@fabricasaitov.ru</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

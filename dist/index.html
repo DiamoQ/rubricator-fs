@@ -4,31 +4,464 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Тестовое задание</title>
+    <title>Рубрикатор помощи</title>
+    <!-- <link rel="stylesheet" href="fonts/golos/golos.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
 
   <body>
-    <div class="main">
-      <section class="section squares">
-        <div class="container">
-          <div class="left__column">
-            <div id="1" class="square">1</div>
-            <div id="2" class="square">2</div>
-          </div>
-          <div class="middle__column">
-            <div id="3" class="square">3</div>
-            <div id="4" class="square">4</div>
-          </div>
-          <div class="right__column">
-            <div id="5" class="square">5</div>
-            <div id="6" class="square">6</div>
+    <div class="page-wrapper">
+      <header class="navigation">
+        <div class="header-hamburger__wrapper">
+          <div class="hamburger">
+              <span class="hamburger-line hamburger-top"></span>
+              <span class="hamburger-line hamburger-middle"></span>
+              <span class="hamburger-line hamburger-bottom"></span>
           </div>
         </div>
-      </section>
+        <div class="header-wrapper">
+          <div class="close">
+            <span class="close-line close-left"></span>
+            <span class="close-line close-right"></span>
+          </div>
+          <a href="/" class="site-name">Рубрикатор помощи</a>
+          <form id="navigationSearch" class="search navigation__search">
+            <button type="submit" class="input__btn">
+              <img draggable="false" alt="Иконка кнопки поиска" src="./img/navigation-search-icon.svg"/>
+            </button>
+            <input
+              type="text"
+              name="navigation-search"
+              id="navigation-search"
+              class="navigation__input"
+              placeholder="Поиск"
+            />
+          </form>
+          <nav class="navigation__block">
+            <ul class="navigation__list">
+              <li class="navigation___item">
+                <span class="navigation__section">начало работы</span>
+                <ul class="navigation__links-list">
+                  <li>
+                    <a href="/content.html" class="navigation__link"
+                      >Интерфейс системы</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Основные возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Заказ товаров и услуг</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation___item">
+                <span class="navigation__section">аналитика</span>
+                <ul class="navigation__links-list">
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Интерфейс системы</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Основные возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Заказ товаров и услуг</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation___item">
+                <span class="navigation__section">Основные настройки</span>
+                <ul class="navigation__links-list">
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Интерфейс системы</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Основные возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Заказ товаров и услуг</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation___item">
+                <span class="navigation__section">тарифы и платежи</span>
+                <ul class="navigation__links-list">
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Интерфейс системы</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Основные возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Заказ товаров и услуг</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation___item">
+                <span class="navigation__section">домены и хостинг</span>
+                <ul class="navigation__links-list">
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Интерфейс системы</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Основные возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Заказ товаров и услуг</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation___item">
+                <span class="navigation__section">документы и бухгалтерия</span>
+                <ul class="navigation__links-list">
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Интерфейс системы</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Основные возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Заказ товаров и услуг</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation___item">
+                <span class="navigation__section">техническая поддержка</span>
+                <ul class="navigation__links-list">
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Интерфейс системы</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Основные возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/content" class="navigation__link"
+                      >Заказ товаров и услуг</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="main">
+        <section class="section banner banner-main">
+          <div class="container">
+            <img
+              src="./img/fs-white-logo.svg"
+              class="banner__logo"
+              alt="Логотип компании 'Фабрика сайтов'"
+              draggable="false"
+            />
+            <h1 class="banner__title">Справочный центр "Фабрики сайтов"</h1>
+            <p class="banner__text">
+              Подробные инструкции по функциям и настройкам, ответы на часто
+              задаваемые вопросы и полезные ссылки
+            </p>
+            <form id="bannerSearch" class="search banner__search">
+              <input
+                type="text"
+                name="banner-search"
+                id="banner-search"
+                class="banner__input"
+                placeholder="Ключевое слово"
+              />
+              <button type="submit" class="input__btn">
+                <img alt="Иконка кнопки поиска" src="./img/search-icon.svg" draggable="false"/>
+              </button>
+            </form>
+          </div>
+        </section>
+        <section class="section sections">
+          <div class="container">
+            <div class="sections__block">
+              <h2>Начало работы</h2>
+              <ul class="sections__list">
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Интерфейс системы</a
+                  >
+                </li>
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Основные возможности</a
+                  >
+                </li>
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Заказ товаров и услуг</a
+                  >
+                </li>
+              </ul>
+              <div class="sections__icon">
+                <img draggable="false" src="./img/start-icon.svg" alt="Иконка тематического раздела" />
+              </div>
+            </div>
+            <div class="sections__block">
+              <h2>Аналитика</h2>
+              <ul class="sections__list">
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Интерфейс системы</a
+                  >
+                </li>
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Основные возможности</a
+                  >
+                </li>
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Заказ товаров и услуг</a
+                  >
+                </li>
+              </ul>
+              <div class="sections__icon">
+                <img draggable="false" src="./img/analitics-icon.svg" alt="Иконка тематического раздела" />
+              </div>
+            </div>
+            <div class="sections__block">
+              <h2>Основные настройки</h2>
+              <ul class="sections__list">
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Интерфейс системы</a
+                  >
+                </li>
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Основные возможности</a
+                  >
+                </li>
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Заказ товаров и услуг</a
+                  >
+                </li>
+              </ul>
+              <div class="sections__icon">
+                <img draggable="false" src="./img/default-set-icon.svg" alt="Иконка тематического раздела" />
+              </div>
+            </div>
+            <div class="sections__block">
+              <h2>Тарифы и платежи</h2>
+              <ul class="sections__list">
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Интерфейс системы</a
+                  >
+                </li>
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Основные возможности</a
+                  >
+                </li>
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Заказ товаров и услуг</a
+                  >
+                </li>
+              </ul>
+              <div class="sections__icon">
+                <img draggable="false" src="./img/start-icon.svg" alt="Иконка тематического раздела" />
+              </div>
+            </div>
+            <div class="sections__block">
+              <h2>Домены и хостинг</h2>
+              <ul class="sections__list">
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Интерфейс системы</a
+                  >
+                </li>
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Основные возможности</a
+                  >
+                </li>
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Заказ товаров и услуг</a
+                  >
+                </li>
+              </ul>
+              <div class="sections__icon">
+                <img draggable="false" src="./img/domens-icon.svg" alt="Иконка тематического раздела" />
+              </div>
+            </div>
+            <div class="sections__block">
+              <h2>Документы и бухгалтерия</h2>
+              <ul class="sections__list">
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Интерфейс системы</a
+                  >
+                </li>
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Основные возможности</a
+                  >
+                </li>
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Заказ товаров и услуг</a
+                  >
+                </li>
+              </ul>
+              <div class="sections__icon">
+                <img draggable="false" src="./img/docks-icon.svg" alt="Иконка тематического раздела" />
+              </div>
+            </div>
+            <div class="sections__block">
+              <h2>Техническая поддержка</h2>
+              <ul class="sections__list">
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Интерфейс системы</a
+                  >
+                </li>
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Основные возможности</a
+                  >
+                </li>
+                <li>
+                  <a href="/content" class="sections__link"
+                    >Заказ товаров и услуг</a
+                  >
+                </li>
+              </ul>
+              <div class="sections__icon">
+                <img draggable="false" src="./img/support-icon.svg" alt="Иконка тематического раздела" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section popular-themes">
+          <div class="container">
+            <h2 class="section-title">Популярные запросы</h2>
+            <ul class="popular-themes__list">
+              <li>
+                <a href="/content" class="popular-themes__link"
+                  >Как подключить свой домен</a
+                >
+              </li>
+              <li>
+                <a href="/content" class="popular-themes__link"
+                  >Как подключить свой домен</a
+                >
+              </li>
+              <li>
+                <a href="/content" class="popular-themes__link"
+                  >Как подключить свой домен</a
+                >
+              </li>
+              <li>
+                <a href="/content" class="popular-themes__link"
+                  >Как настроить протокол HTTPS</a
+                >
+              </li>
+              <li>
+                <a href="/content" class="popular-themes__link"
+                  >Как настроить протокол HTTPS</a
+                >
+              </li>
+              <li>
+                <a href="/content" class="popular-themes__link"
+                  >Как настроить протокол HTTPS</a
+                >
+              </li>
+              <li>
+                <a href="/content" class="popular-themes__link"
+                  >Как оплатить безналично</a
+                >
+              </li>
+              <li>
+                <a href="/content" class="popular-themes__link"
+                  >Как оплатить безналично</a
+                >
+              </li>
+              <li>
+                <a href="/content" class="popular-themes__link"
+                  >Как оплатить безналично</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__block">
+            <span class="footer__block-name">Сообщить о найденной ошибке</span>
+            <p class="footer__block-text">
+              Если вы обнаружили ошибку в текстах или какая-то функция работает
+              с ошибками, обязательно сообщите нам через
+              <a href="#">форму</a> Мы все исправим.
+            </p>
+          </div>
+          <div class="footer__block">
+            <span class="footer__block-name">Сообщить о найденной ошибке</span>
+            <p class="footer__block-text">
+              Если вы не нашли ответа на свой вопрос в нашем справочнике, то
+              можете адресовать его нашему консультанту, написав на
+              <a href="mailto:support@fabricasaitov.ru"
+                >support@fabricasaitov.ru</a
+              >
+            </p>
+          </div>
+          <div class="footer__block">
+            <span class="footer__block-name">Сообщить о найденной ошибке</span>
+            <p class="footer__block-text">
+              Получить закрывающие документы или подтверждение платежа —
+              напишите нам на
+              <a href="mailto:buh@fabricasaitov.ru">buh@fabricasaitov.ru</a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="js/main.min.js"></script>

@@ -1,0 +1,40 @@
+@keyframes header-show {
+  from { left: -1000px; opacity: 0;} 
+  to { left: 0; opacity: 1;}
+}
+
+@keyframes header-hide {
+  from { left: 0px; opacity: 1;}
+  to { left: -1000px; opacity: 0;}
+}
+
+@keyframes header-width-up {
+  from { max-width: 55px;}
+  to { max-width: 300px;}
+}
+
+@keyframes header-width-down {
+  from { max-width: 300px;}
+  to { max-width: 55px;}
+}
+
+@keyframes header-show-mobile {
+  from { left: -400px; opacity: 0;} 
+  to { left: 0; opacity: 1;}
+}
+
+@keyframes header-hide-mobile {
+  0% { opacity: 1;}
+  99% { opacity: 0;}
+  100% { z-index: 1000;}
+}
+
+@keyframes header-width-up-mobile {
+  from { height: 55px; max-width: 55px;}
+  to { height: 100%; max-width: 100%;}
+}
+
+@keyframes header-width-down-mobile {
+  from { height: 100%; max-width: 100%;}
+  to { height: 50px; max-width: 55px;}
+}
