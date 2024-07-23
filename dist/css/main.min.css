@@ -1426,11 +1426,12 @@ ul li {
   }
 
   footer .container {
-    padding: 0 20px 0 76px;
+    padding: 0 20px 0 25px;
   }
 
   footer .footer__block {
     max-width: 100%;
+    padding-right: 0px;
   }
 
   footer .footer__block-name {
