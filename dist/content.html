@@ -39,13 +39,16 @@
                 src="./img/navigation-search-icon.svg"
               />
             </button>
-            <input
-              type="text"
-              name="navigation-search"
-              id="navigation-search"
-              class="navigation__input"
-              placeholder="Поиск"
-            />
+            <label for="navigation-search">
+              Поиск
+              <input
+                type="text"
+                name="navigation-search"
+                id="navigation-search"
+                class="navigation__input"
+                placeholder="Поиск"
+              />
+            </label>
           </form>
           <nav class="navigation__block">
             <ul class="navigation__list">
@@ -269,36 +272,45 @@
               <form class="form" action="" method="post">
                 <div class="form__row">
                   <div class="form__group">
-                    <input
-                      id="name"
-                      type="text"
-                      class="form__control"
-                      name="name"
-                      value=""
-                      placeholder="Ф.И.О"
-                      required
-                    />
+                    <label for="name">
+                      Имя
+                      <input
+                        id="name"
+                        type="text"
+                        class="form__control"
+                        name="name"
+                        value=""
+                        placeholder="Ф.И.О"
+                        required
+                      />
+                    </label>
                   </div>
                   <div class="form__group">
-                    <input
-                      id="email"
-                      type="email"
-                      class="form__control"
-                      name="email"
-                      value=""
-                      placeholder="E-mail"
-                      required
-                    />
+                    <label for="email">
+                      E-mail
+                      <input
+                        id="email"
+                        type="email"
+                        class="form__control"
+                        name="email"
+                        value=""
+                        placeholder="E-mail"
+                        required
+                      />
+                    </label>
                   </div>
                 </div>
                 <div class="form__group">
-                  <textarea
-                    id="text"
-                    name="text"
-                    class="form__control"
-                    placeholder="Сообщение"
-                    required
-                  ></textarea>
+                  <label for="text">
+                    Сообщение
+                    <textarea
+                      id="text"
+                      name="text"
+                      class="form__control"
+                      placeholder="Сообщение"
+                      required
+                    ></textarea>
+                  </label>
                 </div>
                 <div class="form__group">
                   <label class="form__file-label" for="file">Приложить файлы (JPG/PNG/PDF, не более 5 Мб)</label>

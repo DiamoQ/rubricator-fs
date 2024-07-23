@@ -61,6 +61,10 @@
     .form__group {
       width: 100%;
 
+      label {
+        font-size: 0px;
+      }
+
       input, textarea {
         width: 100%;
         font-size: 24px;

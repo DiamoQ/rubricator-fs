@@ -572,6 +572,10 @@ footer .footer__block-text a:hover {
   width: 100%;
 }
 
+.form-section .form .form__group label {
+  font-size: 0px;
+}
+
 .form-section .form .form__group input,
 .form-section .form .form__group textarea {
   width: 100%;
@@ -752,6 +756,10 @@ header {
   border: 1px solid #CBCCDC;
   border-radius: 17px;
   padding: 7px 10px 7px 39px;
+}
+
+.header-wrapper .navigation__search label {
+  font-size: 0px;
 }
 
 .header-wrapper .navigation__list {
@@ -977,6 +985,10 @@ header {
   line-height: 28px;
   padding: 11px 60px 11px 30px;
   border-radius: 30px;
+}
+
+.banner__search label {
+  font-size: 0px;
 }
 
 .banner__search button {
