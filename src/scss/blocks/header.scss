@@ -178,16 +178,17 @@ header {
       transform: translateY(-50%);
     }
 
+    label {
+      font-size: 0px;
+    }
+
     input {
       width: 100%;
       border: 1px solid #CBCCDC;
       border-radius: 17px;
       padding: 7px 10px 7px 39px;
-    }
-
-    label {
-      font-size: 0px;
-    }
+      font-size: 14px;
+    }  
   }
   
   .navigation__list {
