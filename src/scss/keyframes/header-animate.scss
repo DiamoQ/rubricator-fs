@@ -14,8 +14,8 @@
 }
 
 @keyframes header-width-down {
-  from { max-width: 300px;}
-  to { max-width: 55px;}
+  from { max-width: 300px; z-index: 1000;}
+  to { max-width: 55px; z-index: 0;}
 }
 
 @keyframes header-show-mobile {

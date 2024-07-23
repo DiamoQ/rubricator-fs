@@ -141,11 +141,11 @@
     }
 
     li {
-      max-width: calc(33% - 17px);
+      max-width: calc(33% - 20px);
       width: 100%;
 
       @include tablets{
-        max-width: calc(50% - 10px);
+        max-width: calc(50% - 17px);
       }
 
       @include phones{

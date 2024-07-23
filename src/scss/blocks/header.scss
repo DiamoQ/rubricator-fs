@@ -31,7 +31,7 @@ header {
 
     &.notactive {
       animation-name: header-width-down-mobile;
-      animation-duration: 1.2s;
+      animation-duration: .9s;
       z-index: 1000;
       max-width: 55px;
       height: 50px;
@@ -39,7 +39,7 @@ header {
 
     &.active {
       animation-name: header-width-up-mobile;
-      animation-duration: 1.2s;
+      animation-duration: .9s;
       max-width: 100%;
       z-index: 1111;
       height: 100%;
@@ -91,6 +91,7 @@ header {
   overflow-y: auto;
   height: 100%;
   max-width: 300px;
+  width: 100%;
   padding: 25px 15px;
   
 
@@ -121,7 +122,7 @@ header {
     &.active {
       width: 100%;
       animation-name: header-show-mobile;
-      animation-duration: 1.2s;
+      animation-duration: 1.6s;
     }
 
     .close {
@@ -199,12 +200,16 @@ header {
       text-transform: uppercase;
       padding : 4px 0 4px 31px;
       transition: background-color .3s ease, color .3s ease;
+      border-radius: 4px;
 
       &:hover {
         color: $blue;
-        border-radius: 4px;
         background-color: $blue-hover;
         transition: background-color .3s ease, color .3s ease;
+
+        @include tablets{
+          background-color: transparent
+        }
       }
 
       &.active {
@@ -224,7 +229,7 @@ header {
         top: 11px;
         width: 12px;
         height: 8px;
-        background-image: url("../../img/navigation-arrow.svg");
+        background-image: url("../img/navigation-arrow.svg");
         transform: rotateZ(270deg);
         fill: $dark;
         background-repeat: no-repeat;
@@ -252,14 +257,12 @@ header {
         position: absolute;
         left: 20px;
         top: 0;
-        width: 12px;
+        width: 10px;
         height: calc(100% - 9px);
-        border-radius: 32px;
         border: 1px solid $blue-hover;
         border-right: 0;
         border-top: 0;
-        border-top-left-radius: 0;
-        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 6px;
       }
     }
 
@@ -277,7 +280,7 @@ header {
       &:after {
         content: " ";
         position: absolute;
-        left: -12px;
+        left: -16px;
         top: 50%;
         width: 5px;
         height: 5px;
