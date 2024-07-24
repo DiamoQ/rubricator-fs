@@ -537,6 +537,7 @@ footer .footer__block-text a:hover {
   line-height: 43.2px;
   font-weight: 600;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .form-section__title ~ p {
@@ -1795,6 +1796,13 @@ ul li {
     max-width: calc(50% - 17px);
   }
 
+  .form-section__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .form-section__link {
     padding: 12px 24px;
   }
@@ -1864,7 +1872,11 @@ ul li {
     line-height: 24px;
   }
 
-  .form-section__title {
+  .form-section__wrapper {
+    padding: 60px 20px;
+  }
+
+  .form-section__link {
     text-align: center;
   }
 

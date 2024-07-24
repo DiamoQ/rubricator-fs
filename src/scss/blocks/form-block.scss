@@ -13,6 +13,10 @@
     @include laptops {
       padding: 60px 40px;
     }
+
+    @include phones {
+      padding: 60px 20px;
+    }
   }
 
   &__title {
@@ -20,10 +24,7 @@
     line-height: 43.2px;
     font-weight: 600;
     margin-bottom: 40px;
-
-    @include phones {
-      text-align: center;
-    }
+    text-align: center;
   }
 
   &__title ~ p {
@@ -38,6 +39,10 @@
   &__buttons {
     display: flex;
     gap: 26px;
+
+    @include tablets{
+      flex-direction: column;
+    }
   }
 
   &__link {
@@ -61,6 +66,10 @@
 
     @include tablets {
       padding: 12px 24px;
+    }
+
+    @include phones {
+      text-align: center;
     }
 
     &:hover {

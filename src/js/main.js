@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
   header = document.querySelector(".navigation");
   body = document.querySelector("body");
 
-  window.addEventListener("click", (e) => {
+  window.addEventListener("touchstart", (e) => {
     if (e.target.closest(".header-hamburger__wrapper")) {
       navigationMenu.classList.add("active");
       header.classList.add("active");
