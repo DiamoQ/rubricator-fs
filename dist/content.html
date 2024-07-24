@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Настройка автоплатежей в биллинге</title>
-    <!-- <link rel="stylesheet" href="fonts/golos/golos.css" /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="fonts/golos/golos.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
 
@@ -219,11 +219,18 @@
               Затем кликните на строку с нужным доменом или хостингом, чтобы она
               выделилась, как на скриншоте ниже и нажмите кнопку «Изменить».
             </p>
-            <img
-              src="./img/photo-instruction-1.png"
-              class="photo-big-inctruction"
-              alt="Фотография-инструкция"
-            />
+            <div class="instruction-image">
+              <a href="./img/photo-instruction-1.png" 
+                  data-pswp-width="1400" 
+                  data-pswp-height="800" 
+                  target="_blank">
+                <img
+                  src="./img/photo-instruction-1.png"
+                  class="photo-big-inctruction"
+                  alt="Фотография-инструкция"
+                />
+              </a>
+            </div>
             <div class="step">2</div>
             <p>
               Далее выберите период автопродления, ниже обязательно нажмите
@@ -254,11 +261,18 @@
                 не меньше стоимости продления услуги.
               </p>
             </div>
-            <img
-              src="./img/photo-instruction-2.png"
-              class="photo-big-inctruction"
-              alt="Фотография-инструкция"
-            />
+            <div class="instruction-image">
+              <a href="./img/photo-instruction-2.png" 
+                  data-pswp-width="1400" 
+                  data-pswp-height="800" 
+                  target="_blank">
+                <img
+                  src="./img/photo-instruction-2.png"
+                  class="photo-big-inctruction"
+                  alt="Фотография-инструкция"
+                />
+              </a>
+            </div>
           </div>
         </section>
         <section class="section form-section">
@@ -266,10 +280,19 @@
             <div class="form-section__wrapper">
               <h2 class="form-section__title">Не нашли ответа на вопрос?</h2>
               <p>
-                Заполните форму ниже, и менеджеры нашей техподдержки смогут
-                помочь вам с решением
+                Менеджеры нашей техподдержки смогут помочь вам с решением
               </p>
-              <form class="form" action="" method="post">
+              <div class="form-section__buttons">
+                <a href="t.me/fabricasaitov_Bot" target="_blank" class="form-section__link telegram">
+                  <img src="./img/tg-logo.svg" draggable="false" alt="Логотип телеграмма в кнопке 'Написать в телеграм'"/>
+                  Написать в телеграм
+                </a>
+                <a href="mailto:vopros@fabricasaitov.ru" class="form-section__link email">
+                  <img src="./img/mail-logo.svg" draggable="false" alt="Иконка почты в кнопке 'Написать в телеграм'"/>
+                  Написать на почту
+                </a>
+              </div>
+              <!-- <form class="form" action="" method="post">
                 <div class="form__row">
                   <div class="form__group">
                     <label for="name">
@@ -331,7 +354,7 @@
                     Подтвердить согласие ↗
                   </button>
                 </div>
-              </form>
+              </form> -->
             </div>
           </div>
         </section>
@@ -375,7 +398,7 @@
             <p class="footer__block-text">
               Если вы обнаружили ошибку в текстах или какая-то функция работает
               с ошибками, обязательно сообщите нам через
-              <a href="#">форму</a> Мы все исправим.
+              <a href="#">форму.</a> Мы все исправим.
             </p>
           </div>
           <div class="footer__block">
@@ -383,8 +406,8 @@
             <p class="footer__block-text">
               Если вы не нашли ответа на свой вопрос в нашем справочнике, то
               можете адресовать его нашему консультанту, написав на
-              <a href="mailto:support@fabricasaitov.ru"
-                >support@fabricasaitov.ru</a
+              <a href="mailto:vopros@fabricasaitov.ru"
+                >vopros@fabricasaitov.ru</a
               >
             </p>
           </div>
@@ -399,7 +422,8 @@
         </div>
       </footer>
     </div>
-
+ 
+    <script type="module" src="js/popup-images.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
