@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Golos Text Regular';
+	src: url('./fonts/golos_text_regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/golos_text_regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/golos_text_regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/golos_text_regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/golos_text_regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/golos_text_regular.svg#golos_text_regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
