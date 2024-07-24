@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
   header = document.querySelector(".navigation");
   body = document.querySelector("body");
 
-  window.addEventListener("touchstart", (e) => {
+  function workMobileMenu(e, navigationMenu, header, body) {
     if (e.target.closest(".header-hamburger__wrapper")) {
       navigationMenu.classList.add("active");
       header.classList.add("active");
@@ -52,5 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
       header.classList.contains("active") && header.classList.add("notactive");
       header.classList.remove("active");
     }
-  });
+  }
+
+  window.addEventListener("touchstart", (e) => workMobileMenu(e, navigationMenu, header, body));
+  window.addEventListener("click", (e) => workMobileMenu(e, navigationMenu, header, body));
 });
