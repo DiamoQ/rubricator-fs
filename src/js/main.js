@@ -46,7 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
       !e.target.classList.contains("navigation__section") &&
       !e.target.classList.contains("navigation__input") &&
       !e.target.classList.contains("navigation___item") &&
+      !e.target.classList.contains("site-name") &&
       !e.target.classList.contains("navigation__list") &&
+      !e.target.classList.contains("navigation__link") &&
       !e.target.classList.contains("header-wrapper")
     ) {
       navigationMenu.classList.remove("active");
