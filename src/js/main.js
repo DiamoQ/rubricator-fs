@@ -1,16 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Открытие/закрытие списков навигации
 
-  const themesButtons = document.querySelectorAll(".navigation__section");
+  const themesButtons = document.querySelectorAll(".navigation__item");
   const themesLists = document.querySelectorAll(".navigation__links-list");
 
   themesButtons?.forEach((themeButton, index) => {
     themeButton.addEventListener("click", () => {
-      if (themeButton.classList.contains("active")) {
+      if (themesButtons[index].classList.contains("active")) {
         themeButton.classList.remove("active");
+        themesButtons[index].classList.remove("active");
         themesLists[index].classList.remove("active");
       } else {
         themeButton.classList.add("active");
+        themesButtons[index].classList.add("active");
         themesLists[index].classList.add("active");
       }
     });
